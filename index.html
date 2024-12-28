@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic UI App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADGCAMAAADFYc2jAAAAsVBMVEX///8REiQAAADQ0dLBwcGmpqbIyMiysrIAABgAABUREiUAABO5ubnh4eEREiMNDiLZ2dkAABoAAA0GCB8AAAkAAB1ERU9FRUXx8fE0NUCVlptZWWAoKTWAgoaenqLn5+d3d3cVFRVZWVlra2swMDAiIiIpKSk7PEcYGSlLTFVgYGh5eX+UlZuNjZOIiIikpKSBgYE5OTlkZGQ/Pk1dXGRub3V6eoAiIjAoKjVgX2ZAQUmynyCHAAAFIElEQVR4nO3dcXOaSBgGcF1EwEUWWSACsqZpe4CCae+KpPn+H+yABcU0c3/cXM8JPL9EAi+G8XFlWdfMZDYDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPiI9id1sLV+XNztkfxWC/L4XvWJkOfLlvZAyEjj1zm3b2s2afStv2y3xhl/XycTb4vLm/jaiOOf6mSf3hanE//daJOJb7bRnt5UJxP/oY1G9rfVqcRfy/TkdFueSvxvXXxyW55K/D49MW/KE4nfBvvSLB5u6hOJ/73N1aZbD+vTiC/HtrPHZvltuGMa8dvcn7uwwx2TiL/tY92EbUwivtq3+ue2BxzsmUT8tsv/c9a85W8o1z1TiK9cL/hEdgIXU4j/+drj/dmuXmc9JhBfdnzyvZ5833ed9ZhA/Oc2lNauy6fiOusxgfhfh1d7+epf9vvGH18mfFjbjXU4OBNmU4gv2/uNftZj9PH376W/zHqMPn74bvy+Kxh9/E/vx+9mPcYeXw5zvy7M3uJRdoVy99jjP92c6o2uM5CzHiOP32W1hzU55S1nPWT8/iPO0cU/tYH+uKlpg87PHjwV/ZBYnY2GTBre1OTAV46Cu/XuLbD8MOCr/cthPihzeJ5fyIGQnPV4urkQyvEx+f4/P8zf5cs7r/3+aiCbXDb4p24UKGcGvv/yZwAf1Lr1S5pheSseT9ePPvbh42lEXR8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAuCiTdv2PAZM0m08a4k/Zv4y/+m8fxd308RlrFpfydW3OeX0b/Aav91n6sPKBdfFZkLI5S1jXrGnQ5bcs4mfEy9Kmwa36a8WzlLGqjMaRv4vPs5yuHJVQOp/rlAa5Y1FnY+k6WSjLPdvvdO4Sz2IOIetMJ3/Fh4D984E/hi6+5ZqEBUWkhq4bq2GlRDuhHkicV/XAIHDtdZQoSmakpv3DTl6XyY9DeteHveLNCbm69EHcaIqrepNbl/vUsepzemNtPE71OePMYJfv7j79uU9D380TQbLiWLpeUBBTJyJY7shiqwVk7W+2UbZ110USKOXW11N2384vjehBNyyuG7TOwo2s4C4zuGXokT63PK/unLjODRb47tk5HxIR0yRiYVWF1TysXkKry3/p+gJBnktxPqrCqTfyIKRsFwp3TjJ1ltlBpBCyKLeEE2V2JNa9e36qEfWlMKK4ECzfZQczKRek8GmRhFFqlEeeB9nRL0ixOS7pQVvFJVFzNVGFL0Smaq8qlce5XPhcLYnLc/JqqQ7zgrwSrpecnh1GXJILe+evCVEOW0JJ3fqru5/3RnGOFOWo+eefWqKJKFOjQvimyAKlfgWLV/XVDA/L+GedQ3PKghzDcyl+aosijAURR3XhyONc4uvxcrUxg+BHJnbZxnTU6MX0NHenhGIbqEpga+qemMvwYCfx2rlX7B7brYlaBIv8IESuhqTQDmYcarEoc9X3zSIPtZCKKI6T0M7sOArVUix34vzc5K+fnVKXx7nEZ2ls1LcioH4Re6++cy4q/eDNo7CoNvQcOHHhMVKGwfGFFMndm5+/MN330oQmjk9fWJXQwPG546e7Kkh39bq+Yy9plnKnWmWZ59e9RFX5VM8orXclRneY66iP6c1NZ3NON/UoyNoYzOIra0Prn/MNY7rBVpZHmc5Wxt3TtwMzVvfs9YI3y2al2W6++i224u29OLfkoI5ZzQqXY7wWxvxThvhTNvH4fwN6dHUauiFHoAAAAABJRU5ErkJggg==">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light mb-2 ">
+        <div class="container-fluid  topBotomBordersOut  ">
+            <a class="navbar-brand" href="#"><i class="fas fa-heart"></i><strong>AnyProductSeller</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul class="navbar-nav ms-auto ">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#landing"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#discover"><strong>Discover</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/eppak/OneDrive/Documents/portfolio/details.html"><strong>Details</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/eppak/OneDrive/Documents/portfolio/details.html"><strong>Add New</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><strong>Contact</strong></a>
+                    </li>
+                    
+                </ul>
+            
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="landing" class="text-center  bg-light mb-2">
+        <div class="container">
+            <h1>Welcome to AnyProductSeller</h1>
+            <p class="lead">Create, Sale, Discover, and Manage Content Seamlessly!</p>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section id="discover" class="p-5  mb-4 ">
+        <div class="container">
+            <h2 class="text">Discover Our Features</h2>
+            <p class="text">Learn about what AnyProductSeller can do for you. 
+                Our application allows you to manage and showcase your ideas with ease.
+                "Our App offers innovative features to simplify your daily tasks. 
+                Discover how you can manage items efficiently and dynamically. 
+                Our platform lets you create, edit, Sale and organize data seamlessly.
+                Enhance your workflow with real-time updates and interactive elements. 
+                Explore the power of a robust and user-friendly interface!"
+            </p>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <!-- <section id="details" class="p-5 ">
+        <div class="container">
+            <h2>Details Section</h2>
+            <input type="text" id="searchBar" class="form-control mb-4" placeholder="Search items...">
+            <div class="row" id="cardContainer"></div>
+        </div>
+    </section> -->
+
+    <!-- Add New Section -->
+    <!-- <section id="form" class="p-5">
+        <div class="container">
+            <h2>Add New Item</h2>
+            <form id="itemForm">
+                <div class="mb-3">
+                    <label for="itemName" class="form-label">Item Name</label>
+                    <input type="text" id="itemName" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="itemDescription" class="form-label">Description</label>
+                    <textarea id="itemDescription" class="form-control" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="itemImage" class="form-label">Image URL</label>
+                    <input type="url" id="itemImage" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="itemPrice" class="form-label">Price</label>
+                    <input type="Price" id="itemPrice" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Item</button>
+            </form>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-3  text-center mb-2 ">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: support@AnyProductSeller.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center p-2 mb-2">
+        <p>&copy; 2024 AnyProductSeller. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
